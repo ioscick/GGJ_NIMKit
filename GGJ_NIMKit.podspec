@@ -1,42 +1,74 @@
-#
-# Be sure to run `pod lib lint GGJ_NIMKit.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
+{
+"name": "GGJ_NIMKit",
+"version": "0.1.0",
+"summary": "Netease IM UI Kit",
+"homepage": "https://github.com/ioscick/GGJ_NIMKit.git",
 
-Pod::Spec.new do |s|
-  s.name             = 'GGJ_NIMKit'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of GGJ_NIMKit.'
+"authors": "154986932@qq.com",
+"source": {
+"git": "https://github.com/ioscick/GGJ_NIMKit.git",
+"tag": "0.1.0"
+},
+"platforms": {
+"ios": "8.0"
+},
+"frameworks": [
+"CoreText",
+"SystemConfiguration",
+"AVFoundation",
+"CoreTelephony",
+"AudioToolbox",
+"CoreMedia",
+"VideoToolbox"
+],
+"libraries": [
+"sqlite3.0",
+"z",
+"c++"
+],
+"default_subspecs": "Lite",
+"subspecs": [
+{
+"name": "Full",
+"source_files": "GGJ_NIMKit/NIMKit/**/*.{h,m}",
+"dependencies": {
+"NIMKit/Core": [
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+],
+"NIMSDK": [
+"~> 6.2.0"
+]
+}
+},
+{
+"name": "Lite",
+"source_files": "GGJ_NIMKit/NIMKit/**/*.{h,m}",
+"dependencies": {
+"NIMKit/Core": [
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/154986932@qq.com/GGJ_NIMKit'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '154986932@qq.com' => 'shenlp@gegejia.com' }
-  s.source           = { :git => 'https://github.com/154986932@qq.com/GGJ_NIMKit.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'GGJ_NIMKit/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'GGJ_NIMKit' => ['GGJ_NIMKit/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
-end
+],
+"NIMSDK_LITE": [
+"~> 6.2.0"
+]
+}
+},
+{
+"name": "Core",
+"resources": "GGJ_NIMKit/Resources/*.*",
+"dependencies": {
+"SDWebImage": [
+"~> 4.4.5"
+],
+"Toast": [
+"~> 3.0"
+],
+"M80AttributedLabel": [
+"~> 1.6.3"
+],
+"TZImagePickerController": [
+"~> 3.0.7"
+]
+}
+}
+]
+}

@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		0043EA1AA2E39EE43A795379 /* Pods-GGJ_NIMKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGJ_NIMKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GGJ_NIMKit_Tests/Pods-GGJ_NIMKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		0EEBBFA2D4CD7EFF5E98C587 /* Pods_GGJ_NIMKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GGJ_NIMKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D9425ADF352D154F1137EE4 /* GGJ_NIMKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = GGJ_NIMKit.podspec; path = ../GGJ_NIMKit.podspec; sourceTree = "<group>"; };
+		1D9425ADF352D154F1137EE4 /* GGJ_NIMKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GGJ_NIMKit.podspec; path = ../GGJ_NIMKit.podspec; sourceTree = "<group>"; };
 		322418330A2398271763A8CE /* Pods_GGJ_NIMKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GGJ_NIMKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F2D004A5464197ADF4AC615 /* Pods-GGJ_NIMKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGJ_NIMKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GGJ_NIMKit_Tests/Pods-GGJ_NIMKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* GGJ_NIMKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GGJ_NIMKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,9 +62,9 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7DF7C05C83AC91F654890A0B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7DF7C05C83AC91F654890A0B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A3F4A130518F3BADB780621A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A3F4A130518F3BADB780621A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A4A3597786F8DAF811D0EBFC /* Pods-GGJ_NIMKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGJ_NIMKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-GGJ_NIMKit_Example/Pods-GGJ_NIMKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BC68605234E4B8111D6A3D05 /* Pods-GGJ_NIMKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGJ_NIMKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GGJ_NIMKit_Example/Pods-GGJ_NIMKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -500,6 +500,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GGJ_NIMKit/GGJ_NIMKit-Prefix.pch";
 				INFOPLIST_FILE = "GGJ_NIMKit/GGJ_NIMKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -515,6 +516,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GGJ_NIMKit/GGJ_NIMKit-Prefix.pch";
 				INFOPLIST_FILE = "GGJ_NIMKit/GGJ_NIMKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
