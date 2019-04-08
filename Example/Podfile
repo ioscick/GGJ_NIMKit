@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'GGJ_NIMKit_Example' do
+  pod 'GGJ_NIMKit', :path => '../'
+
+  target 'GGJ_NIMKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
