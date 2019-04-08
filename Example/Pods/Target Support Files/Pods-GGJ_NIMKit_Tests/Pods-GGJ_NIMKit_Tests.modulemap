@@ -1,0 +1,6 @@
+framework module Pods_GGJ_NIMKit_Tests {
+  umbrella header "Pods-GGJ_NIMKit_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

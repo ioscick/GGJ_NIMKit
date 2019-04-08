@@ -1,0 +1,6 @@
+framework module GGJ_NIMKit {
+  umbrella header "GGJ_NIMKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

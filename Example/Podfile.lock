@@ -1,0 +1,45 @@
+PODS:
+  - GGJ_NIMKit (0.5.0):
+    - GGJ_NIMKit/Lite (= 0.5.0)
+  - GGJ_NIMKit/Core (0.5.0):
+    - M80AttributedLabel (~> 1.6.3)
+    - SDWebImage (~> 4.4.5)
+    - Toast (~> 3.0)
+    - TZImagePickerController (~> 3.0.7)
+  - GGJ_NIMKit/Lite (0.5.0):
+    - GGJ_NIMKit/Core
+    - NIMSDK_LITE (~> 6.2.0)
+  - M80AttributedLabel (1.6.3)
+  - NIMSDK_LITE (6.2.0)
+  - SDWebImage (4.4.6):
+    - SDWebImage/Core (= 4.4.6)
+  - SDWebImage/Core (4.4.6)
+  - Toast (3.1.0)
+  - TZImagePickerController (3.0.9)
+
+DEPENDENCIES:
+  - GGJ_NIMKit (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - M80AttributedLabel
+    - NIMSDK_LITE
+    - SDWebImage
+    - Toast
+    - TZImagePickerController
+
+EXTERNAL SOURCES:
+  GGJ_NIMKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GGJ_NIMKit: 6538b5fcf1327bffc2203020308c0365dce7432c
+  M80AttributedLabel: d06543195d3e451d2ea62ad76d04aa9cea7661d4
+  NIMSDK_LITE: 84874ecd531be49d3d682a35f44e8a3a68b5bef8
+  SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
+  Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
+  TZImagePickerController: ea3e906af8caa7088f612ad673feb73cc6aa6bfc
+
+PODFILE CHECKSUM: 2b5fb3e721d187d68f5d36f7ff15c06b442aa103
+
+COCOAPODS: 1.5.0
