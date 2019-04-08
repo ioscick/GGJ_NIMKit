@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
 s.name = 'GGJ_NIMKit'
-s.version = '0.5.0'
+s.version = '0.7.0'
 s.summary = 'Netease IM UI Kit'
 s.homepage = 'https://github.com/ioscick'
 s.authors = 'shenliping'
-s.source  = { :git => 'https://github.com/ioscick/GGJ_NIMKit', :tag => '0.5.0'}
+s.source  = { :git => 'https://github.com/ioscick/GGJ_NIMKit', :tag => '0.7.0'}
 s.platform = :ios, '8.0'
 s.frameworks = 'CoreText', 'SystemConfiguration', 'AVFoundation', 'CoreTelephony', 'AudioToolbox', 'CoreMedia' , 'VideoToolbox'
 s.libraries  = 'sqlite3.0', 'z', 'c++'
