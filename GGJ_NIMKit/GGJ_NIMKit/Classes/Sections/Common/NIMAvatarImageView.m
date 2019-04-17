@@ -192,9 +192,9 @@ static char imageURLKey;
     
     if (url) {
         // check if activityView is enabled or not
-        if ([self sd_showActivityIndicatorView]) {
-            [self sd_addActivityIndicator];
-        }
+//        if ([self sd_showActivityIndicatorView]) {
+//            [self sd_addActivityIndicator];
+//        }
         __block NSURL *targetURL = url;
         __weak __typeof(self)wself = self;
 
@@ -207,7 +207,7 @@ static char imageURLKey;
              
              id <SDWebImageOperation> operation = [SDWebImageManager.sharedManager loadImageWithURL:targetURL options:options progress:progressBlock completed:^(UIImage *image, NSData *data, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
                  __strong __typeof (wself) sself = wself;
-                 [sself sd_removeActivityIndicator];
+//                 [sself sd_removeActivityIndicator];
                  if (!sself) {
                      return;
                  }
@@ -237,7 +237,7 @@ static char imageURLKey;
 
     } else {
         dispatch_main_async_safe(^{
-            [self sd_removeActivityIndicator];
+//            [self sd_removeActivityIndicator];
             if (completedBlock) {
                 NSError *error = [NSError errorWithDomain:@"SDWebImageErrorDomain" code:-1 userInfo:@{NSLocalizedDescriptionKey : @"Trying to load a nil url"}];
                 completedBlock(nil, error, SDImageCacheTypeNone, url);
@@ -257,7 +257,7 @@ static char imageURLKey;
 
 - (void)nim_setImage:(UIImage *)image imageData:(NSData *)imageData basedOnClassOrViaCustomSetImageBlock:(SDSetImageBlock)setImageBlock {
     if (setImageBlock) {
-        setImageBlock(image, imageData);
+        setImageBlock(image, imageData, SDImageCacheTypeDisk, [NSURL URLWithString:@""]);
         return;
     }
     self.image = image;

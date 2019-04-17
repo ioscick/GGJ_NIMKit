@@ -1,12 +1,12 @@
 {
   "name": "GGJ_NIMKit",
-  "version": "0.5.0",
+  "version": "0.7.0",
   "summary": "Netease IM UI Kit",
   "homepage": "https://github.com/ioscick",
   "authors": "shenliping",
   "source": {
     "git": "https://github.com/ioscick/GGJ_NIMKit",
-    "tag": "0.5.0"
+    "tag": "0.7.0"
   },
   "platforms": {
     "ios": "8.0"
@@ -56,7 +56,7 @@
       "resources": "GGJ_NIMKit/Resources/*.*",
       "dependencies": {
         "SDWebImage": [
-          "~> 4.4.5"
+          "~> 5.0.0"
         ],
         "Toast": [
           "~> 3.0"
